@@ -14,11 +14,11 @@ const typewriter = document.getElementById("typewriter");
 const slideImage = document.getElementById("slideImage");
 
 const photos = [
-"images/photo1.jpg",
-"images/photo2.jpg",
-"images/photo3.jpg",
-"images/photo4.jpg",
-"images/photo5.jpg"
+"images/IMG-20260706-WA0002.jpg",
+"images/IMG-20260706-WA0006.jpg",
+"images/IMG-20260706-WA0013.jpg",
+"images/IMG-20260706-WA0014.jpg",
+"images/IMG-20260706-WA0015.jpg"
 ];
 
 let currentPhoto = 0;
