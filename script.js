@@ -291,12 +291,12 @@ slideImage.style.transition="1s";
 };
 
 const butterflyImages=[
-"images/butterfly1.jpg",
-"images/butterfly2.jpg",
-"images/butterfly3.jpg",
-"images/butterfly4.jpg",
-"images/butterfly5.jpg",
-"images/butterfly6.jpg"
+"images/butterfly1.png",
+"images/butterfly2.png",
+"images/butterfly3.png",
+"images/butterfly4.png",
+"images/butterfly5.png",
+"images/butterfly6.png"
 ];
 
 function createButterfly(){
