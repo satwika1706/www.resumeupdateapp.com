@@ -708,37 +708,41 @@ top:0;
 z-index:9999;
 pointer-events:none;
 user-select:none;
+filter:drop-shadow(0 0 10px rgba(255,255,255,.8));
 animation:flyButterfly linear forwards;
-filter:drop-shadow(0 0 8px rgba(255,255,255,.8));
+will-change:transform,opacity;
 }
+
 @keyframes flyButterfly{
 
 0%{
 opacity:0;
-transform:translate(0,0) scale(.5) rotate(0deg);
+transform:translate(0,0) scale(0.5) rotate(0deg);
 }
 
 10%{
 opacity:1;
 }
 
-40%{
+30%{
 transform:
-translate(calc(var(--x) * 150px),-250px)
+translate(calc(var(--x) * 0.3), calc(var(--y) * 0.3))
+scale(0.8)
 rotate(180deg);
 }
 
-70%{
+60%{
 transform:
-translate(calc(var(--x) * 280px),-550px)
+translate(calc(var(--x) * 0.7), calc(var(--y) * 0.7))
+scale(1.1)
 rotate(360deg);
 }
 
 100%{
 opacity:0;
 transform:
-translate(calc(var(--x) * 400px),-900px)
-scale(1.4)
+translate(var(--x), var(--y))
+scale(1.5)
 rotate(720deg);
 }
 
