@@ -1,0 +1,647 @@
+/* =========================================
+   PREMIUM BIRTHDAY WEBSITE
+   style.css (PART 1)
+========================================= */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:linear-gradient(135deg,#ffd6e8,#ffe9f5,#ffd1dc);
+overflow-x:hidden;
+color:#fff;
+min-height:100vh;
+}
+
+/* Floating Hearts */
+
+#hearts,
+#balloons{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+pointer-events:none;
+z-index:1;
+}
+
+/* Hero */
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+position:relative;
+z-index:2;
+}
+
+.title{
+font-family:'Great Vibes',cursive;
+font-size:70px;
+color:#ff2d75;
+text-shadow:0 0 20px white;
+animation:fadeDown 1.5s ease;
+}
+
+.name{
+margin-top:15px;
+font-size:40px;
+font-weight:700;
+color:white;
+text-shadow:0 0 15px hotpink;
+animation:fadeUp 2s ease;
+}
+
+.date{
+margin-top:15px;
+font-size:22px;
+letter-spacing:2px;
+color:#fff;
+}
+
+#startBtn{
+margin-top:45px;
+padding:18px 45px;
+border:none;
+border-radius:50px;
+background:#ff2d75;
+color:white;
+font-size:20px;
+cursor:pointer;
+transition:.4s;
+box-shadow:0 0 25px rgba(255,0,120,.5);
+}
+
+#startBtn:hover{
+transform:scale(1.08);
+background:#ff006e;
+}
+
+/* Hidden */
+
+.hidden{
+display:none;
+}
+
+/* Gift Section */
+
+#giftSection{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+}
+
+.gift-box{
+position:relative;
+width:180px;
+height:180px;
+cursor:pointer;
+animation:bounce 2s infinite;
+}
+
+.box{
+position:absolute;
+bottom:0;
+width:180px;
+height:130px;
+background:#ff4d8d;
+border-radius:0 0 12px 12px;
+}
+
+.box::before{
+content:'';
+position:absolute;
+left:50%;
+transform:translateX(-50%);
+width:30px;
+height:130px;
+background:#ffd700;
+}
+
+.lid{
+position:absolute;
+top:20px;
+width:190px;
+height:45px;
+left:-5px;
+background:#ff2d75;
+border-radius:10px;
+transition:.8s;
+}
+
+.lid::before{
+content:'';
+position:absolute;
+left:50%;
+transform:translateX(-50%);
+width:30px;
+height:45px;
+background:#ffd700;
+}
+
+.giftText{
+margin-top:40px;
+font-size:26px;
+font-weight:600;
+}
+
+/* Cake */
+
+#cakeSection{
+padding:90px 20px;
+text-align:center;
+}
+
+.cake{
+position:relative;
+width:220px;
+height:220px;
+margin:auto;
+}
+
+.layer{
+position:absolute;
+left:50%;
+transform:translateX(-50%);
+border-radius:15px;
+}
+
+.bottom{
+bottom:0;
+width:220px;
+height:70px;
+background:#ff6b9e;
+}
+
+.middle{
+bottom:70px;
+width:180px;
+height:60px;
+background:#ff8ab4;
+}
+
+.top{
+bottom:130px;
+width:140px;
+height:50px;
+background:#ffb3cf;
+}
+
+.candle{
+position:absolute;
+left:50%;
+transform:translateX(-50%);
+top:10px;
+width:18px;
+height:60px;
+background:white;
+border-radius:8px;
+}
+
+.flame{
+position:absolute;
+top:-18px;
+left:50%;
+transform:translateX(-50%);
+width:18px;
+height:18px;
+background:gold;
+border-radius:50%;
+animation:flicker .5s infinite alternate;
+box-shadow:0 0 20px orange;
+}
+
+.wish{
+margin-top:40px;
+font-size:36px;
+color:#ff2d75;
+}
+
+/* Slideshow */
+
+#gallery{
+padding:90px 20px;
+text-align:center;
+}
+
+#gallery h2{
+font-size:40px;
+margin-bottom:35px;
+color:#ff2d75;
+}
+
+.slider{
+width:92%;
+max-width:420px;
+margin:auto;
+background:white;
+padding:10px;
+border-radius:25px;
+box-shadow:0 15px 40px rgba(0,0,0,.25);
+}
+
+.slider img{
+width:100%;
+border-radius:18px;
+transition:1s;
+}
+
+/* Message */
+
+#messageSection{
+padding:90px 20px;
+display:flex;
+justify-content:center;
+}
+
+.card{
+max-width:900px;
+background:rgba(255,255,255,.18);
+backdrop-filter:blur(18px);
+padding:40px;
+border-radius:30px;
+box-shadow:0 12px 35px rgba(0,0,0,.18);
+}
+
+.card h2{
+text-align:center;
+margin-bottom:25px;
+font-size:40px;
+color:white;
+}
+
+#typewriter{
+font-size:20px;
+line-height:2;
+white-space:pre-wrap;
+}
+
+/* Footer */
+
+footer{
+padding:80px 20px;
+text-align:center;
+}
+
+footer h2{
+font-family:'Great Vibes',cursive;
+font-size:60px;
+color:#ff2d75;
+}
+
+footer p{
+margin-top:20px;
+font-size:24px;
+}
+
+/* Animations */
+
+@keyframes bounce{
+
+0%{transform:translateY(0);}
+50%{transform:translateY(-18px);}
+100%{transform:translateY(0);}
+
+}
+
+@keyframes flicker{
+
+0%{
+transform:translateX(-50%) scale(1);
+}
+
+100%{
+transform:translateX(-50%) scale(1.25);
+}
+
+}
+
+@keyframes fadeDown{
+
+from{
+opacity:0;
+transform:translateY(-60px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+@keyframes fadeUp{
+
+from{
+opacity:0;
+transform:translateY(60px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+/* =========================================
+   PREMIUM BIRTHDAY WEBSITE
+   style.css (PART 2)
+========================================= */
+
+/* Floating Hearts */
+
+.heart{
+position:fixed;
+font-size:22px;
+animation:heartFloat 8s linear forwards;
+pointer-events:none;
+z-index:5;
+}
+
+@keyframes heartFloat{
+
+0%{
+transform:translateY(100vh) scale(.5);
+opacity:0;
+}
+
+20%{
+opacity:1;
+}
+
+100%{
+transform:translateY(-120vh) scale(1.4);
+opacity:0;
+}
+
+}
+
+/* Floating Balloons */
+
+.balloon{
+position:fixed;
+bottom:-120px;
+width:55px;
+height:70px;
+border-radius:50%;
+animation:balloonFloat 12s linear forwards;
+z-index:3;
+}
+
+.balloon::after{
+content:'';
+position:absolute;
+left:50%;
+top:70px;
+width:2px;
+height:80px;
+background:white;
+}
+
+@keyframes balloonFloat{
+
+0%{
+transform:translateY(0);
+}
+
+100%{
+transform:translateY(-130vh);
+}
+
+}
+
+/* Sparkles */
+
+.sparkle{
+position:fixed;
+width:8px;
+height:8px;
+background:white;
+border-radius:50%;
+animation:sparkle 3s linear infinite;
+}
+
+@keyframes sparkle{
+
+0%,100%{
+opacity:.2;
+transform:scale(.5);
+}
+
+50%{
+opacity:1;
+transform:scale(1.5);
+}
+
+}
+
+/* Gift Open Animation */
+
+.openGift .lid{
+transform:rotate(-35deg) translateY(-40px);
+}
+
+.openGift{
+animation:giftZoom .8s ease;
+}
+
+@keyframes giftZoom{
+
+0%{
+transform:scale(.7);
+}
+
+100%{
+transform:scale(1);
+}
+
+}
+
+/* Photo Hover */
+
+.slider img:hover{
+transform:scale(1.03);
+}
+
+/* Card Animation */
+
+.card{
+animation:fadeCard 1.5s ease;
+}
+
+@keyframes fadeCard{
+
+from{
+opacity:0;
+transform:translateY(50px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+/* Button Animation */
+
+#startBtn{
+animation:pulse 2s infinite;
+}
+
+@keyframes pulse{
+
+0%{
+box-shadow:0 0 10px hotpink;
+}
+
+50%{
+box-shadow:0 0 40px deeppink;
+}
+
+100%{
+box-shadow:0 0 10px hotpink;
+}
+
+}
+
+/* Glass Effect */
+
+.hero,
+.card,
+.slider{
+backdrop-filter:blur(15px);
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.title{
+font-size:52px;
+}
+
+.name{
+font-size:28px;
+}
+
+.date{
+font-size:18px;
+}
+
+#startBtn{
+font-size:18px;
+padding:15px 35px;
+}
+
+.gift-box{
+transform:scale(.85);
+}
+
+.cake{
+transform:scale(.85);
+}
+
+.card{
+padding:25px;
+}
+
+.card h2{
+font-size:28px;
+}
+
+#typewriter{
+font-size:17px;
+line-height:1.8;
+}
+
+footer h2{
+font-size:42px;
+}
+
+footer p{
+font-size:18px;
+}
+
+}
+
+@media(max-width:480px){
+
+.title{
+font-size:42px;
+}
+
+.name{
+font-size:24px;
+}
+
+.slider{
+width:98%;
+}
+
+#gallery h2{
+font-size:30px;
+}
+
+.wish{
+font-size:28px;
+}
+
+.card{
+padding:20px;
+}
+
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+width:10px;
+}
+
+::-webkit-scrollbar-thumb{
+background:#ff2d75;
+border-radius:20px;
+}
+
+::-webkit-scrollbar-track{
+background:#ffe4ef;
+}
+
+/* Fade Sections */
+
+section{
+animation:sectionFade 1s ease;
+}
+
+@keyframes sectionFade{
+
+from{
+opacity:0;
+transform:translateY(40px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+/* End */
