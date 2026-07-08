@@ -160,6 +160,8 @@ background:#ffd700;
 margin-top:40px;
 font-size:26px;
 font-weight:600;
+color:#c2185b;
+text-shadow:0 0 10px white;
 }
 
 /* Cake */
@@ -649,6 +651,18 @@ transform:translateY(0);
 }
 
 }
+
+
+/* Add this */
+
+#cakeSection h2{
+color:#c2185b;
+font-size:36px;
+text-shadow:0 0 10px white;
+}
+
+
+/* End */
 
 #cutePopup{
 position:fixed;
