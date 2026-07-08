@@ -75,6 +75,10 @@ typeMessage();
 
 launchFireworks();
 
+for(let i=0;i<30;i++){
+createButterfly();
+}
+
 window.scrollTo({
 top:0,
 behavior:"smooth"
@@ -285,5 +289,42 @@ slideImage.onload=()=>{
 slideImage.style.transition="1s";
 
 };
+
+function createButterfly(){
+
+const butterfly=document.createElement("div");
+
+butterfly.className="flyingButterfly";
+
+const colors=[
+"#ff4d6d",
+"#ff85a2",
+"#ffd166",
+"#70e000",
+"#00bbf9",
+"#9b5de5",
+"#f15bb5"
+];
+
+butterfly.innerHTML="🦋";
+
+butterfly.style.left=Math.random()*100+"vw";
+
+butterfly.style.fontSize=(45+Math.random()*25)+"px";
+
+butterfly.style.color=
+colors[Math.floor(Math.random()*colors.length)];
+
+butterfly.style.animationDuration=
+(4+Math.random()*3)+"s";
+
+document.body.appendChild(butterfly);
+
+setTimeout(()=>{
+butterfly.remove();
+},7000);
+
+}
+
 
 /* End ❤️ */
