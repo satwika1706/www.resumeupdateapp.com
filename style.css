@@ -825,3 +825,11 @@ rotate(720deg);
 }
 
 }
+footer p{
+color:#a0004d !important;
+font-size:24px;
+font-weight:700;
+text-shadow:
+0 0 5px #fff,
+2px 2px 4px rgba(0,0,0,.5);
+}
