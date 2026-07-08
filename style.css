@@ -388,6 +388,11 @@ color:#ff2d75;
 footer p{
 margin-top:20px;
 font-size:24px;
+color:#ff006e;
+font-weight:bold;
+text-shadow:
+2px 2px 5px rgba(0,0,0,0.35),
+0 0 10px white;
 }
 
 /* Animations */
