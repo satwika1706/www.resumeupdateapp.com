@@ -75,12 +75,12 @@ typeMessage();
 
 launchFireworks();
 
-for(let i=0;i<80;i++){
+for(let i=0;i<150;i++){
 setTimeout(()=>{
-createButterfly();
-},i*40);
+createFlower();
+},i*10);
 }
-
+   
 window.scrollTo({
 top:0,
 behavior:"smooth"
@@ -293,17 +293,18 @@ slideImage.style.transition="1s";
 };
 
 const flowers=[
-"🌸",
-"🌺",
-"🌷",
-"💐",
-"🌹",
-"🌼",
-"🪷",
-"🌻"
+"🌸","🌺","🌷","💐","🌹","🌼","🪷","🌻",
+"🍫","🍫","🍫","🍫",
+"🍬","🍬",
+"🍭","🍭",
+"🎀",
+"💝",
+"🎁",
+"💖",
+"✨"
 ];
 
-function createButterfly(){
+function createFlower(){
 
 const flower=document.createElement("div");
 
@@ -323,8 +324,8 @@ flower.style.top=
 flower.style.fontSize=
 (35+Math.random()*35)+"px";
 
-flower.style.setProperty("--x",
-(Math.random()*2-1).toFixed(2));
+flower.style.setProperty("--x",(Math.random()*800-400)+"px");
+flower.style.setProperty("--y",(-600-Math.random()*400)+"px");
 
 flower.style.animationDuration=
 (3+Math.random()*4)+"s";
