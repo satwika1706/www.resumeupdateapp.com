@@ -20,19 +20,19 @@ const photos = [
 "images/IMG-20260706-WA0013.jpg",
 "images/IMG-20260706-WA0014.jpg",
 "images/IMG-20260706-WA0015.jpg",
- "WhatsApp Image 2026-07-09 at 1.28.17 AM (1).jpeg",
- "WhatsApp Image 2026-07-09 at 1.28.17 AM (2).jpeg",
-"WhatsApp Image 2026-07-09 at 1.28.17 AM.jpeg",
-"WhatsApp Image 2026-07-09 at 1.28.18 AM (1).jpeg",
-"WhatsApp Image 2026-07-09 at 1.28.18 AM.jpeg",
-"WhatsApp Image 2026-07-09 at 1.28.19 AM (1).jpeg",
-"WhatsApp Image 2026-07-09 at 1.28.19 AM (2).jpeg",
-"WhatsApp Image 2026-07-09 at 1.28.19 AM (3).jpeg",
-"WhatsApp Image 2026-07-09 at 1.28.19 AM.jpeg",
-"WhatsApp Image 2026-07-09 at 1.28.20 AM (1).jpeg",
-"WhatsApp Image 2026-07-09 at 1.28.20 AM (2).jpeg",
-"WhatsApp Image 2026-07-09 at 1.28.20 AM.jpeg",
-"WhatsApp Image 2026-07-09 at 1.28.21 AM.jpeg"
+"images/WhatsApp Image 2026-07-09 at 1.28.17 AM (1).jpeg",
+"images/WhatsApp Image 2026-07-09 at 1.28.17 AM (2).jpeg",
+"images/WhatsApp Image 2026-07-09 at 1.28.17 AM.jpeg",
+"images/WhatsApp Image 2026-07-09 at 1.28.18 AM (1).jpeg",
+"images/WhatsApp Image 2026-07-09 at 1.28.18 AM.jpeg",
+"images/WhatsApp Image 2026-07-09 at 1.28.19 AM (1).jpeg",
+"images/WhatsApp Image 2026-07-09 at 1.28.19 AM (2).jpeg",
+"images/WhatsApp Image 2026-07-09 at 1.28.19 AM (3).jpeg",
+"images/WhatsApp Image 2026-07-09 at 1.28.19 AM.jpeg",
+"images/WhatsApp Image 2026-07-09 at 1.28.20 AM (1).jpeg",
+"images/WhatsApp Image 2026-07-09 at 1.28.20 AM (2).jpeg",
+"images/WhatsApp Image 2026-07-09 at 1.28.20 AM.jpeg",
+"images/WhatsApp Image 2026-07-09 at 1.28.21 AM.jpeg"
 ];
 
 let currentPhoto = 0;
