@@ -51,8 +51,8 @@ z-index:2;
 .title{
 font-family:'Great Vibes',cursive;
 font-size:70px;
-color:#ff2d75;
-text-shadow:0 0 20px white;
+color:#ff006e;
+text-shadow:0 0 15px white,0 0 30px #ff69b4;
 animation:fadeDown 1.5s ease;
 }
 
@@ -60,8 +60,8 @@ animation:fadeDown 1.5s ease;
 margin-top:15px;
 font-size:40px;
 font-weight:700;
-color:white;
-text-shadow:0 0 15px hotpink;
+color:#c2185b;
+text-shadow:0 0 15px white, 0 0 25px #ff69b4;
 animation:fadeUp 2s ease;
 }
 
@@ -69,7 +69,9 @@ animation:fadeUp 2s ease;
 margin-top:15px;
 font-size:22px;
 letter-spacing:2px;
-color:#fff;
+color:#8b004f;
+font-weight:600;
+text-shadow:0 0 10px white;
 }
 
 #startBtn{
