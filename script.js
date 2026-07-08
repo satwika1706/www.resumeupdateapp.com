@@ -20,19 +20,19 @@ const photos = [
 "images/IMG-20260706-WA0013.jpg",
 "images/IMG-20260706-WA0014.jpg",
 "images/IMG-20260706-WA0015.jpg",
-"images/WhatsApp Image 2026-07-09 at 1.28.17 AM (1).jpeg",
-"images/WhatsApp Image 2026-07-09 at 1.28.17 AM (2).jpeg",
-"images/WhatsApp Image 2026-07-09 at 1.28.17 AM.jpeg",
-"images/WhatsApp Image 2026-07-09 at 1.28.18 AM (1).jpeg",
-"images/WhatsApp Image 2026-07-09 at 1.28.18 AM.jpeg",
-"images/WhatsApp Image 2026-07-09 at 1.28.19 AM (1).jpeg",
-"images/WhatsApp Image 2026-07-09 at 1.28.19 AM (2).jpeg",
-"images/WhatsApp Image 2026-07-09 at 1.28.19 AM (3).jpeg",
-"images/WhatsApp Image 2026-07-09 at 1.28.19 AM.jpeg",
-"images/WhatsApp Image 2026-07-09 at 1.28.20 AM (1).jpeg",
-"images/WhatsApp Image 2026-07-09 at 1.28.20 AM (2).jpeg",
-"images/WhatsApp Image 2026-07-09 at 1.28.20 AM.jpeg",
-"images/WhatsApp Image 2026-07-09 at 1.28.21 AM.jpeg"
+"images/photo1.jpg.jpeg",
+"images/photo2.jpg.jpeg",
+"images/photo3.jpg.jpeg",
+"images/photo4.jpg.jpeg",
+"images/photo5.jpg.jpeg",
+"images/photo6.jpg.jpeg",
+"images/photo7.jpg.jpeg",
+"images/photo8.jpg.jpeg",
+"images/photo9.jpg.jpeg",
+"images/photo10.jpg.jpeg",
+"images/photo11.jpg.jpeg",
+"images/photo12.jpg.jpeg",
+"images/photo13.jpg.jpeg"
 ];
 
 let currentPhoto = 0;
