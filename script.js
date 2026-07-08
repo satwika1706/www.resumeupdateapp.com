@@ -12,6 +12,7 @@ const footer = document.getElementById("footer");
 const giftBox = document.getElementById("giftBox");
 const typewriter = document.getElementById("typewriter");
 const slideImage = document.getElementById("slideImage");
+const cutePopup = document.getElementById("cutePopup");
 
 const photos = [
 "images/IMG-20260706-WA0002.jpg",
@@ -43,6 +44,12 @@ behavior:"smooth"
 giftBox.onclick = () => {
 
 giftBox.classList.add("openGift");
+
+cutePopup.classList.add("show");
+
+setTimeout(()=>{
+cutePopup.classList.remove("show");
+},4000);
 
 confetti({
 particleCount:250,
