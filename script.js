@@ -92,6 +92,8 @@ behavior:"smooth"
 
 /* Slideshow */
 
+/* Slideshow */
+
 function startSlideshow(){
 
 setInterval(()=>{
@@ -99,25 +101,28 @@ setInterval(()=>{
 currentPhoto++;
 
 if(currentPhoto>=photos.length){
-
 currentPhoto=0;
-
 }
 
-slideImage.style.opacity="0";
+const nextImage = new Image();
+nextImage.src = photos[currentPhoto];
+
+nextImage.onload = ()=>{
+
+slideImage.style.opacity="0.4";
 
 setTimeout(()=>{
 
-slideImage.src=photos[currentPhoto];
-
+slideImage.src = nextImage.src;
 slideImage.style.opacity="1";
 
-},500);
+},200);
+
+};
 
 },3000);
 
 }
-
 /* Typewriter */
 
 let i=0;
