@@ -316,8 +316,8 @@ butterfly.style.left =
 butterfly.style.top =
 (rect.top + rect.height/2) + "px";
 
-butterfly.style.width=(40+Math.random()*60)+"px";
-butterfly.style.setProperty("--x", Math.random() > 0.5 ? 1 : -1);
+butterfly.style.width=(55+Math.random()*35)+"px";
+butterfly.style.setProperty("--x",(Math.random()*2-1).toFixed(2));
 
 butterfly.style.animationDuration=
 (3+Math.random()*4)+"s";
