@@ -75,10 +75,10 @@ typeMessage();
 
 launchFireworks();
 
-for(let i=0;i<150;i++){
+for(let i=0;i<35;i++){
 setTimeout(()=>{
 createFlower();
-},i*10);
+},i*40);
 }
    
 window.scrollTo({
