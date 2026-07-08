@@ -273,24 +273,28 @@ justify-content:center;
 
 .card{
 max-width:900px;
-background:rgba(255,255,255,.18);
+background:rgba(255,255,255,0.45);
 backdrop-filter:blur(18px);
 padding:40px;
 border-radius:30px;
 box-shadow:0 12px 35px rgba(0,0,0,.18);
+border:2px solid rgba(255,255,255,0.6);
 }
 
 .card h2{
 text-align:center;
 margin-bottom:25px;
 font-size:40px;
-color:white;
+color:#c2185b;
+text-shadow:0 0 10px white;
 }
 
 #typewriter{
 font-size:20px;
 line-height:2;
 white-space:pre-wrap;
+color:#6a0038;
+font-weight:500;
 }
 
 /* Footer */
@@ -644,6 +648,31 @@ opacity:1;
 transform:translateY(0);
 }
 
+}
+
+#cutePopup{
+position:fixed;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%) scale(0);
+font-size:90px;
+z-index:20;
+transition:0.8s ease;
+filter:drop-shadow(0 0 20px pink);
+}
+
+#cutePopup.show{
+transform:translate(-50%,-50%) scale(1);
+animation:cuteBounce 1s infinite alternate;
+}
+
+@keyframes cuteBounce{
+from{
+transform:translate(-50%,-50%) translateY(0) scale(1);
+}
+to{
+transform:translate(-50%,-50%) translateY(-20px) scale(1.1);
+}
 }
 
 /* End */
