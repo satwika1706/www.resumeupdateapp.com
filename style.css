@@ -666,27 +666,37 @@ text-shadow:0 0 10px white;
 
 #cutePopup{
 position:fixed;
-top:50%;
+top:-100px;
 left:50%;
-transform:translate(-50%,-50%) scale(0);
-font-size:90px;
+transform:translateX(-50%) scale(0);
+font-size:80px;
 z-index:20;
-transition:0.8s ease;
 filter:drop-shadow(0 0 20px pink);
+transition:1s ease;
 }
 
 #cutePopup.show{
-transform:translate(-50%,-50%) scale(1);
-animation:cuteBounce 1s infinite alternate;
+top:20%;
+transform:translateX(-50%) scale(1);
+animation:butterflyFly 3s ease forwards;
 }
 
-@keyframes cuteBounce{
-from{
-transform:translate(-50%,-50%) translateY(0) scale(1);
-}
-to{
-transform:translate(-50%,-50%) translateY(-20px) scale(1.1);
-}
+
+@keyframes butterflyFly{
+
+0%{
+top:-100px;
+transform:translateX(-50%) scale(0);
 }
 
-/* End */
+50%{
+top:20%;
+transform:translateX(-50%) scale(1.2);
+}
+
+100%{
+top:5%;
+transform:translateX(-50%) scale(1);
+}
+
+}
