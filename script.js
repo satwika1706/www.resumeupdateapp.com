@@ -290,33 +290,31 @@ slideImage.style.transition="1s";
 
 };
 
+const butterflyImages=[
+"images/butterfly1.jpg",
+"images/butterfly2.jpg",
+"images/butterfly3.jpg",
+"images/butterfly4.jpg",
+"images/butterfly5.jpg",
+"images/butterfly6.jpg"
+];
+
 function createButterfly(){
 
-const butterfly=document.createElement("div");
+const butterfly=document.createElement("img");
 
 butterfly.className="flyingButterfly";
 
-const colors=[
-"#ff4d6d",
-"#ff85a2",
-"#ffd166",
-"#70e000",
-"#00bbf9",
-"#9b5de5",
-"#f15bb5"
-];
-
-butterfly.innerHTML="🦋";
+butterfly.src=
+butterflyImages[Math.floor(Math.random()*butterflyImages.length)];
 
 butterfly.style.left=Math.random()*100+"vw";
+butterfly.style.top="85vh";
 
-butterfly.style.fontSize=(45+Math.random()*25)+"px";
-
-butterfly.style.color=
-colors[Math.floor(Math.random()*colors.length)];
+butterfly.style.width=(60+Math.random()*25)+"px";
 
 butterfly.style.animationDuration=
-(4+Math.random()*3)+"s";
+(4+Math.random()*2)+"s";
 
 document.body.appendChild(butterfly);
 
@@ -325,6 +323,5 @@ butterfly.remove();
 },7000);
 
 }
-
 
 /* End ❤️ */
