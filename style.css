@@ -703,29 +703,30 @@ transform:translateX(-50%) scale(1);
 
 .flyingButterfly{
 position:fixed;
-bottom:-80px;
+left:0;
+top:0;
 z-index:9999;
 pointer-events:none;
-animation:flyButterfly linear forwards;
 object-fit:contain;
 filter:drop-shadow(0 0 8px rgba(255,255,255,.8));
+animation:flyButterfly linear forwards;
 }
 
 @keyframes flyButterfly{
 
 0%{
 opacity:0;
-transform:translate(0,0) scale(0.5) rotate(0deg);
+transform:translate(0,0) scale(.4) rotate(0deg);
 }
 
-15%{
+10%{
 opacity:1;
 }
 
 100%{
 opacity:0;
 transform:
-translate(calc(var(--x) * 250px), -120vh)
+translate(calc(var(--x) * 350px), -900px)
 scale(1.3)
 rotate(720deg);
 }
