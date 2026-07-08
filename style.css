@@ -177,8 +177,8 @@ width:220px;
 height:220px;
 margin:0 auto;
 margin-bottom:60px;
+display:block;
 }
-
 .layer{
 position:absolute;
 left:50%;
