@@ -308,13 +308,19 @@ butterfly.className="flyingButterfly";
 butterfly.src=
 butterflyImages[Math.floor(Math.random()*butterflyImages.length)];
 
-butterfly.style.left=Math.random()*100+"vw";
-butterfly.style.top="85vh";
+const rect = giftBox.getBoundingClientRect();
 
-butterfly.style.width=(60+Math.random()*25)+"px";
+butterfly.style.left =
+(rect.left + rect.width/2 + (Math.random()*120-60)) + "px";
+
+butterfly.style.top =
+(rect.top + rect.height/2) + "px";
+
+butterfly.style.width=(40+Math.random()*60)+"px";
+butterfly.style.setProperty("--x", Math.random() > 0.5 ? 1 : -1);
 
 butterfly.style.animationDuration=
-(4+Math.random()*2)+"s";
+(3+Math.random()*4)+"s";
 
 document.body.appendChild(butterfly);
 
