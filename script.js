@@ -75,8 +75,10 @@ typeMessage();
 
 launchFireworks();
 
-for(let i=0;i<30;i++){
+for(let i=0;i<80;i++){
+setTimeout(()=>{
 createButterfly();
+},i*40);
 }
 
 window.scrollTo({
@@ -290,44 +292,47 @@ slideImage.style.transition="1s";
 
 };
 
-const butterflyImages=[
-"images/butterfly1.png",
-"images/butterfly2.png",
-"images/butterfly3.png",
-"images/butterfly4.png",
-"images/butterfly5.png",
-"images/butterfly6.png"
+const flowers=[
+"🌸",
+"🌺",
+"🌷",
+"💐",
+"🌹",
+"🌼",
+"🪷",
+"🌻"
 ];
 
 function createButterfly(){
 
-const butterfly=document.createElement("img");
+const flower=document.createElement("div");
 
-butterfly.className="flyingButterfly";
+flower.className="flyingButterfly";
 
-butterfly.src=
-butterflyImages[Math.floor(Math.random()*butterflyImages.length)];
+flower.innerHTML=
+flowers[Math.floor(Math.random()*flowers.length)];
 
-const rect = giftBox.getBoundingClientRect();
+const rect=giftBox.getBoundingClientRect();
 
-butterfly.style.left =
-(rect.left + rect.width/2 + (Math.random()*120-60)) + "px";
+flower.style.left=
+(rect.left+rect.width/2+(Math.random()*120-60))+"px";
 
-butterfly.style.top =
-(rect.top + rect.height/2) + "px";
+flower.style.top=
+(rect.top+rect.height/2)+"px";
 
-butterfly.style.width=(55+Math.random()*35)+"px";
-butterfly.style.setProperty("--x",(Math.random()*2-1).toFixed(2));
+flower.style.fontSize=
+(35+Math.random()*35)+"px";
 
-butterfly.style.animationDuration=
+flower.style.setProperty("--x",
+(Math.random()*2-1).toFixed(2));
+
+flower.style.animationDuration=
 (3+Math.random()*4)+"s";
 
-document.body.appendChild(butterfly);
+document.body.appendChild(flower);
 
 setTimeout(()=>{
-butterfly.remove();
+flower.remove();
 },7000);
 
 }
-
-/* End ❤️ */
