@@ -13,6 +13,12 @@ const giftBox = document.getElementById("giftBox");
 const typewriter = document.getElementById("typewriter");
 const slideImage = document.getElementById("slideImage");
 const cutePopup = document.getElementById("cutePopup");
+const musicSection = document.getElementById("musicSection");
+const bgMusic = document.getElementById("bgMusic");
+const playSongBtn = document.getElementById("playSongBtn");
+
+
+
 
 const photos = [
 "images/IMG-20260706-WA0002.jpg",
@@ -72,15 +78,10 @@ origin:{y:0.6}
 
 setTimeout(()=>{
 
+
 giftSection.classList.add("hidden");
 
-cakeSection.classList.remove("hidden");
-
-gallery.classList.remove("hidden");
-
-messageSection.classList.remove("hidden");
-
-footer.classList.remove("hidden");
+musicSection.classList.remove("hidden");
 
 startSlideshow();
 
@@ -93,13 +94,31 @@ setTimeout(()=>{
 createFlower();
 },i*40);
 }
-   
+
 window.scrollTo({
 top:0,
 behavior:"smooth"
 });
 
 },1200);
+
+};
+
+playSongBtn.onclick = () => {
+
+    bgMusic.play();
+
+    musicSection.classList.add("hidden");
+
+    cakeSection.classList.remove("hidden");
+    gallery.classList.remove("hidden");
+    messageSection.classList.remove("hidden");
+    footer.classList.remove("hidden");
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
 
 };
 
