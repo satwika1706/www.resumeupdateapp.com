@@ -13,9 +13,7 @@ const giftBox = document.getElementById("giftBox");
 const typewriter = document.getElementById("typewriter");
 const slideImage = document.getElementById("slideImage");
 const cutePopup = document.getElementById("cutePopup");
-const musicSection = document.getElementById("musicSection");
-const bgMusic = document.getElementById("bgMusic");
-const playSongBtn = document.getElementById("playSongBtn");
+
 
 
 
@@ -81,7 +79,10 @@ setTimeout(()=>{
 
 giftSection.classList.add("hidden");
 
-musicSection.classList.remove("hidden");
+cakeSection.classList.remove("hidden");
+gallery.classList.remove("hidden");
+messageSection.classList.remove("hidden");
+footer.classList.remove("hidden");
 
 startSlideshow();
 
@@ -102,25 +103,7 @@ behavior:"smooth"
 
 },1200);
 
-};
 
-playSongBtn.onclick = () => {
-
-    bgMusic.play();
-
-    musicSection.classList.add("hidden");
-
-    cakeSection.classList.remove("hidden");
-    gallery.classList.remove("hidden");
-    messageSection.classList.remove("hidden");
-    footer.classList.remove("hidden");
-
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
-
-};
 
 /* Slideshow */
 
