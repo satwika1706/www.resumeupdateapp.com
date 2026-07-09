@@ -103,6 +103,7 @@ behavior:"smooth"
 
 },1200);
 
+};
 
 
 /* Slideshow */
